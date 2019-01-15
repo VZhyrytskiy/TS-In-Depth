@@ -1,10 +1,10 @@
 const path = require('path');
-const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
+  mode: 'development',
+
   // basedir
   context: path.resolve(__dirname, 'src'),
 
@@ -41,9 +41,6 @@ module.exports = {
 
   // plugins
   plugins: [
-    // minification plugin
-    new UglifyJsPlugin(),
-
     // delete dist folder
     new CleanWebpackPlugin(['dist']),
 
