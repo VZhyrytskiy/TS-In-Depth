@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -42,7 +42,7 @@ module.exports = {
   // plugins
   plugins: [
     // delete dist folder
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(),
 
     // create dist/index.html
     new HtmlWebpackPlugin({
