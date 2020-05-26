@@ -7,4 +7,7 @@ Install Dependencies
 
 Run the Project
 > npm start
+
+Thank you to Contributors:
+> Replace TSLint with ESLint (Anna Bankovskaia <Anna_Bankovskaia@epam.com>)
     
