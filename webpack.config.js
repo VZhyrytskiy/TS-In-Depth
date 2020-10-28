@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
@@ -15,7 +16,9 @@ module.exports = {
 
   // devserver
   devServer: {
-    contentBase: './dist'
+    contentBase: './dist',
+    open: true,
+    hot: true,
   },
 
   // input
@@ -48,7 +51,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'TypeScript In-Depth',
       template: 'index.html'
-    })
+    }),
+
+    // update modules without reload
+    new webpack.HotModuleReplacementPlugin(),
   ],
 
   // switch on source-map as a separate file: bundle.js.map
