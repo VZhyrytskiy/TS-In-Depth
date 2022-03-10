@@ -8,6 +8,7 @@
     "experimentalDecorators": true,
     "removeComments": false,
     "noImplicitAny": false,
+    "noImplicitOverride": true,
     "strictNullChecks": false,
     "outDir": "./dist",
     "incremental": true,
