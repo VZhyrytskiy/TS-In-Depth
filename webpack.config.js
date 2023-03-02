@@ -16,7 +16,9 @@ module.exports = {
 
     // devserver
     devServer: {
-        contentBase: './dist',
+        static: {
+            directory: path.resolve(__dirname, 'dist')
+        },
         open: true,
         hot: true,
     },
@@ -51,10 +53,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'TypeScript In-Depth',
             template: 'index.html',
-        }),
-
-        // update modules without reload
-        new webpack.HotModuleReplacementPlugin(),
+        })
     ],
 
     // switch on source-map as a separate file: bundle.js.map
