@@ -19,4 +19,6 @@ It uses webpack and webpack-dev-server.
 | Add prettier formatter settings                                            | Dzianis Davydau <Dzianis_Davydau@epam.com>        |
 | Improve task 07.01. Generic Functions                                      | Serhii Maliuha <Serhii_Maliuha@epam.com>          |
 | Add new requirements for the Task 07.05 Mapped Types, Utility Types, Conditional Types | Olena Hlukhovska <Olena_Hlukhovska@epam.com> |
-|Apply interface to overload arrow functions                                 |Oleksandr Bereznai <Oleksandr_Bereznai@epam.com>   |
+| Apply interface to overload arrow functions                                 |Oleksandr Bereznai <Oleksandr_Bereznai@epam.com>   |
+| Add a home task for the Task 07.05 Mapped Types, Utility Types, Conditional Types | Oleksandr Cherevach <Oleksandr_Cherevach@epam.com> |
+| Add a home task for the Task 07.05 Mapped Types, Utility Types, Conditional Types | Oleksandr Dragun <Oleksandr_Dragun@epam.com> |
